@@ -1,0 +1,25 @@
+{
+  "analysis_id": "analysis_20251105_053229",
+  "timestamp": "2025-11-05T05:32:29.505789",
+  "original_url": "https://26d00d8cf847.ngrok-free.app/",
+  "final_url": "https://26d00d8cf847.ngrok-free.app/",
+  "risk_score": 0,
+  "risk_level": "LOW",
+  "indicators": {
+    "password_fields": false,
+    "login_forms": false,
+    "suspicious_keywords": [
+      "password",
+      "account"
+    ],
+    "iframe_count": 0
+  },
+  "technical_details": {
+    "load_time": 3.8880269527435303,
+    "response_status": 200,
+    "redirected": false,
+    "network_requests": 23,
+    "errors": 0
+  },
+  "recommendations": []
+}

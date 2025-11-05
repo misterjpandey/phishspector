@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>PhishSpector Control Panel</title>
+    <style>
+      body {
+        width: 250px;
+        font-family: "Segoe UI", sans-serif;
+        margin: 10px;
+      }
+      h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      button {
+        background: #2563eb;
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #1d4ed8;
+      }
+      .status {
+        margin-top: 10px;
+        font-size: 13px;
+      }
+      .green {
+        color: #16a34a;
+      }
+      .red {
+        color: #dc2626;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PhishSpector</h1>
+    <button id="checkBackend">Check Backend Status</button>
+    <div class="status" id="backendStatus">Status: <i>Not checked</i></div>
+    <hr />
+    <button id="rescanBtn">Re-scan Gmail Inbox</button>
+    <p style="font-size:12px;margin-top:8px;color:#555">
+      v0.2 — locally analyzes Gmail rows and checks backend ML.
+    </p>
+
+    <button id="authButton">Authorize Gmail Access</button>
+    <p id="authStatus"></p>
+
+
+    <script src="popup.js"></script>
+  </body>
+</html>

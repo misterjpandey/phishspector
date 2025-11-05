@@ -1,0 +1,23 @@
+gmail:
+  credentials_file: "credentials.json"
+  token_path: "token.json"          # we use token.json in this project
+  query: "in:inbox newer_than:7d"   # scan last 7 days
+  only_unread: false                # include read emails too
+  max_results: 100
+  initial_full_scan: true           # one-time retro scan on startup
+
+analyzer:
+  url: "http://127.0.0.1:5000/analyze-email"
+  timeout: 30
+
+labels:
+  processed: "PHISHSPECTOR_SCANNED"
+  apply_score_label: true
+  score_prefix: "PHISHING-SUSPECT"
+
+db:
+  enabled: true
+  sqlite_path: "phish_logs.db"
+
+worker:
+  poll_interval_seconds: 20

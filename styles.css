@@ -1,0 +1,38 @@
+/* Badge & tooltip styles */
+.phish-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 8px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.06);
+  cursor: pointer;
+  user-select: none;
+}
+
+.phish-badge.low { color: #065f46; background: rgba(16,185,129,0.10); border-color: rgba(16,185,129,0.2); }
+.phish-badge.medium { color: #92400e; background: rgba(245,158,11,0.08); border-color: rgba(245,158,11,0.2); }
+.phish-badge.high { color: #7f1d1d; background: rgba(239,68,68,0.08); border-color: rgba(239,68,68,0.2); }
+
+.phish-badge .score-num { margin-right: 4px; }
+
+.phish-tooltip {
+  position: absolute;
+  z-index: 99999;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  width: 260px;
+}
+
+.phish-tooltip p { margin: 0 0 6px 0; font-weight: 700; }
+.phish-tooltip ul { padding-left: 18px; margin: 0; }
+.phish-tooltip button { margin-top: 8px; padding: 6px 8px; border-radius: 6px; cursor: pointer; }
